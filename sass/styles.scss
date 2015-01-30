@@ -1,6 +1,37 @@
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "bower_components/fontawesome/scss/font-awesome.scss";
+/* Bootstrap includes */
+// Core variables and mixins
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+// Rewrite some Bootstrap variables
 @import "variables";
+
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Reset and dependencies
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+// Components
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+
+
+/* Font Awesome */
+@import "bower_components/fontawesome/scss/font-awesome.scss";
+
+
+/* Custom Styles */
 @import "mixins";
 @import "nav";
 @import "header";

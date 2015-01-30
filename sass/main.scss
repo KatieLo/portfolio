@@ -11,15 +11,43 @@ height:100%;
 
 /* Links */
 a, a:hover, a:focus {
-color: $primary;
+	color: $link-hover-color;
 }
 
 body {
-
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	color: $text;
 	background-color: $background-color;
-	.main-container {
-		margin-top: 60px; // Offset sticky nav 
+	.page-header {
+		margin-top: 50px; // Offset sticky nav 
+		padding: 100px 0;
+		text-align: center;
+		h1 {
+			font-family: "Abril Fatface";
+			font-size: 50px;
 		}
+		h4 {
+			font-size: 20px;
+			margin-top: 15px;
+		}
+
 	}
+}
+
+.section {
+	text-align: center;
+	h2 {
+		text-transform: uppercase;
+		font-size: 18px;
+		
+		padding-bottom: 10px;
+		border-bottom: 1px solid #eee;
+	}
+}
+
+.caption {
+	h3 {
+		margin-top: 0;
+	}
+}
 	

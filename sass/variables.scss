@@ -1,6 +1,10 @@
 $background-color: #eaffff;
-$text: #203560;
-$primary: #FF6600;
+$text: #000;
+$link-hover-color: #FF6600;
 
 $light-orange: #ff8c00;
 $navbar-default-color: $light-orange;
+
+/* Bootstrap Overwrites */
+$navbar-default-link-active-color: #000;
+$navbar-default-link-active-bg: #f8f8f8; /**/
