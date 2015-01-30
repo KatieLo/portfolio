@@ -1,0 +1,25 @@
+/*
+ * Globals
+ */
+
+html, body {
+margin:0;
+padding:0;
+height:100%;
+}
+
+
+/* Links */
+a, a:hover, a:focus {
+color: $primary;
+}
+
+body {
+
+	color: $text;
+	background-color: $background-color;
+	.main-container {
+		margin-top: 60px; // Offset sticky nav 
+		}
+	}
+	
