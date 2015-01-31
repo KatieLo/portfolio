@@ -19,29 +19,42 @@ body {
 	color: $text;
 	background-color: $background-color;
 	.page-header {
-		margin-top: 50px; // Offset sticky nav 
-		padding: 100px 0;
+		margin-top: 7	0px; // Offset sticky nav 
+		padding: 250px;
 		text-align: center;
 		h1 {
-			font-family: "Abril Fatface";
+			font-family: "Abril Fatface", serif;
 			font-size: 50px;
 		}
 		h4 {
 			font-size: 20px;
 			margin-top: 15px;
 		}
+		.fa {
+			font-size: 45px;
+			margin: 10px;
+		}
+		a, a:hover, a:focus {
+			color: #000;
+		}
+
 
 	}
 }
 
 .section {
+	margin: 125px 0;
 	text-align: center;
 	h2 {
-		text-transform: uppercase;
-		font-size: 18px;
+		font-family: "Abril Fatface", serif; 
+		font-size: 40px;
 		
 		padding-bottom: 10px;
 		border-bottom: 1px solid #eee;
+	}
+	p {
+		margin: 20px 0 25px 0;
+		line-height: 25px;
 	}
 }
 
@@ -50,4 +63,13 @@ body {
 		margin-top: 0;
 	}
 }
+
+#about {
+	text-align: left;
+	img {
+			height: 350px;
+		}
+	
+}
+
 	

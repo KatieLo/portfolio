@@ -5331,26 +5331,40 @@ body {
   color: black;
   background-color: #eaffff; }
   body .page-header {
-    margin-top: 50px;
-    padding: 100px 0;
+    margin-top: 7	0px;
+    padding: 250px;
     text-align: center; }
     body .page-header h1 {
-      font-family: "Abril Fatface";
+      font-family: "Abril Fatface", serif;
       font-size: 50px; }
     body .page-header h4 {
       font-size: 20px;
       margin-top: 15px; }
+    body .page-header .fa {
+      font-size: 45px;
+      margin: 10px; }
+    body .page-header a, body .page-header a:hover, body .page-header a:focus {
+      color: #000; }
 
 .section {
+  margin: 125px 0;
   text-align: center; }
   .section h2 {
-    text-transform: uppercase;
-    font-size: 18px;
+    font-family: "Abril Fatface", serif;
+    font-size: 40px;
     padding-bottom: 10px;
     border-bottom: 1px solid #eee; }
+  .section p {
+    margin: 20px 0 25px 0;
+    line-height: 25px; }
 
 .caption h3 {
   margin-top: 0; }
+
+#about {
+  text-align: left; }
+  #about img {
+    height: 350px; }
 
 html {
   position: relative;
