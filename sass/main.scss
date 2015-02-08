@@ -14,13 +14,17 @@ a, a:hover, a:focus {
 	color: $link-hover-color;
 }
 
+.navbar-header {
+	font-family: "Abril Fatface", serif;
+}
+
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	color: $text;
 	background-color: $background-color;
 	.page-header {
 		margin-top: 7	0px; // Offset sticky nav 
-		padding: 250px;
+		padding: 200px;
 		text-align: center;
 		h1 {
 			font-family: "Abril Fatface", serif;
@@ -53,6 +57,7 @@ body {
 		border-bottom: 1px solid #eee;
 	}
 	p {
+		font-size: 18px;
 		margin: 20px 0 25px 0;
 		line-height: 25px;
 	}
@@ -65,11 +70,26 @@ body {
 }
 
 #about {
+	p {
+		line-height: 30px;
+		font-size: 16px;
+
+	}
 	text-align: left;
 	img {
 			height: 350px;
 		}
 	
+}
+
+footer {
+	.fa {
+		font-size: 30px;
+		padding: 15px;
+	}
+	span {
+		padding-bottom: 5px;
+	}
 }
 
 	
