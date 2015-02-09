@@ -1,15 +1,16 @@
 $background-color: #fffefe;
 $text: #000;
-$link-hover-color: #FF6600;
+$link-hover-color: #e62b1e;//#FF6600;
+$text-muted: #8B8888;
 
-$light-orange: #ff8c00;
+$light-orange: #e62b1e;//#ff8c00;
 
 /* Bootstrap Overwrites */
 
  /**/
 $navbar-default-color:   $text;
 $navbar-default-link-color: $text;
-$navbar-default-link-active-color: $light-orange;
+$navbar-default-link-active-color: $text;
 $navbar-default-brand-color: $text;
 $navbar-default-brand-hover-color: $light-orange;
 $navbar-default-bg:     $background-color;

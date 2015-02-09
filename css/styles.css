@@ -1077,7 +1077,7 @@ a {
   color: #337ab7;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #ff6600;
+    color: #e62b1e;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -1258,7 +1258,7 @@ mark,
   text-transform: capitalize; }
 
 .text-muted {
-  color: #777777; }
+  color: #8b8888; }
 
 .text-primary {
   color: #337ab7; }
@@ -2165,7 +2165,7 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777777;
+  color: #8b8888;
   text-align: left; }
 
 th {
@@ -2940,7 +2940,7 @@ select[multiple].input-lg {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: #ff6600;
+    color: #e62b1e;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
@@ -3383,7 +3383,7 @@ input[type="button"].btn-block {
   .navbar-default .navbar-brand {
     color: black; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: darkorange;
+      color: #e62b1e;
       background-color: transparent; }
   .navbar-default .navbar-text {
     color: black; }
@@ -3393,7 +3393,7 @@ input[type="button"].btn-block {
       color: #333333;
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: darkorange;
+    color: black;
     background-color: #fffefe; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #cccccc;
@@ -3409,7 +3409,7 @@ input[type="button"].btn-block {
     border-color: #e7e7e7; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #fffefe;
-    color: darkorange; }
+    color: black; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: black; }
@@ -3417,7 +3417,7 @@ input[type="button"].btn-block {
         color: #333333;
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: darkorange;
+      color: black;
       background-color: #fffefe; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #cccccc;
@@ -5324,17 +5324,18 @@ html, body {
 
 /* Links */
 a, a:hover, a:focus {
-  color: #ff6600; }
+  color: #e62b1e; }
 
 .navbar-header {
-  font-family: "Abril Fatface", serif; }
+  font-family: "Abril Fatface", serif;
+  font-weight: 600; }
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: black;
   background-color: #fffefe; }
   body .page-header {
-    margin-top: 7	0px;
+    margin-top: 70px	0px;
     padding: 200px;
     text-align: center; }
     body .page-header h1 {
@@ -5347,7 +5348,7 @@ body {
       font-size: 45px;
       margin: 10px; }
     body .page-header a, body .page-header a:hover, body .page-header a:focus {
-      color: #000; }
+      color: black; }
 
 .section {
   margin: 125px 0;
@@ -5359,11 +5360,18 @@ body {
     border-bottom: 1px solid #eee; }
   .section p {
     font-size: 18px;
-    margin: 20px 0 25px 0;
+    margin: 30px 0 40px 0;
     line-height: 25px; }
 
-.caption h3 {
-  margin-top: 0; }
+.caption {
+  padding-bottom: 20px; }
+  .caption h3 {
+    margin-top: 0; }
+  .caption .fine-print {
+    font-size: 12px;
+    color: #8b8888;
+    font-style: italic;
+    margin-bottom: 20px; }
 
 #about {
   text-align: left; }
@@ -5371,13 +5379,20 @@ body {
     line-height: 30px;
     font-size: 16px; }
   #about img {
-    height: 350px; }
+    height: 350px;
+    float: right; }
 
-footer .fa {
-  font-size: 30px;
-  padding: 15px; }
-footer span {
-  padding-bottom: 5px; }
+footer {
+  color: black;
+  text-align: center; }
+  footer .fa {
+    font-size: 30px;
+    padding: 15px;
+    vertical-align: middle; }
+  footer a, footer a:hover, footer a:focus {
+    color: black; }
+  footer span {
+    font-weight: 700; }
 
 html {
   position: relative;
