@@ -79,17 +79,21 @@ body {
 }
 
 #about {
-	p {
-		line-height: 30px;
-		font-size: 16px;
+	margin-top: 20px;
+	text-align: left;
+	p {	
+		line-height: 35px;
+		font-size: 20px;
 
 	}
-	text-align: left;
+	.img-container {
+		text-align: right;
+	}
 	img {
-			height: 350px;
-			float: right;
-		}
-	
+		margin-top: 30px;
+		max-width: 100px;
+	}
+		
 }
 
 footer {
