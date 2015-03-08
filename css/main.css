@@ -67,3 +67,4 @@ body:before {
   white-space: pre;
   font-family: monospace;
   content: "Syntax error: Undefined variable: \"$link-hover-color\".\A         on line 14 of sass/main.scss\A \A 9: }\A 10: \A 11: \A 12: /* Links */\A 13: a, a:hover, a:focus {\A 14: 	color: $link-hover-color;\A 15: }\A 16: \A 17: body {\A 18: 	font-family: \"Open Sans\", Helvetica, Arial, sans-serif;\A 19: 	color: $text;"; }
+

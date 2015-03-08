@@ -25,8 +25,11 @@ body {
 	background-color: $background-color;
 	
 	.page-header {
-		margin-top: 70px	0px; // Offset sticky nav 
-		padding: 200px;
+		margin-top: 70px 0px; // Offset sticky nav 
+		padding: 200px 0 50px 0;
+		@media(min-width: $screen-md-min){
+			padding: 200px;
+		}
 		text-align: center;
 		h1 {
 			font-family: "Abril Fatface", serif;
@@ -47,6 +50,7 @@ body {
 
 	}
 }
+
 
 
 .section {
@@ -96,7 +100,9 @@ body {
 		
 }
 
+
 footer {
+	background-color: white;
 	color: $text;
 	text-align: center;
 	.fa {

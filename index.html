@@ -10,26 +10,31 @@
     <!-- Bootstrap core CSS -->
     <link href="css/styles.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans' rel='stylesheet' type='text/css'>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     
   </head>
 
   <body>
-     <!-- Fixed navbar -->
+
+    <!-- Fixed navbar --> 
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">Katie Womersley</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#projects">Projects</a></li>
             <li><a href="#work">Client Work</a></li>
             <li ><a href="#sites">Sites</a></li>
-            <li><a href="#about">About Me</a></li>
+            <li><a href="#more-about">About Me</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
@@ -39,7 +44,7 @@
         <h4>My name is</h4>
         <h1>Katie Womersley</h1>
         <h4>and I build cool web stuff</h4>
-        <div><a href="https://github.com/KatieLo"><i class="fa fa-github"></a></i> <a href="https://twitter.com/katie_womers"><i class="fa fa-twitter"></i></a> <a href=""><i class="fa fa-linkedin-square"></i></a></div>
+        <div><a href="https://github.com/KatieLo"><i class="fa fa-github"></a></i> <a href="https://twitter.com/katie_womers"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/in/kathleenwomersley"><i class="fa fa-linkedin-square"></i></a></div>
       </div>
 
       <div class="section" id="about">
@@ -47,7 +52,7 @@
           <div class="row">
             <div class="col-sm-2 hidden-xs img-container"><img class="img-circle" src="images/Katie-small.jpg"></div>
             <div class="col-xs-12 col-sm-10">
-              <p>Hi, I'm Katie. Thank you for visiting my internet home. I'm a front-end web developer at <a href="http://travelground.com">Travelground.com</a> and I do client work too at my digital agency, <a href="http://dune8.com">Dune8</a>. I get really excited about things like reducing latency and js object creation patterns. I also have some experience in PHP and Rails.</p>
+              <p>Hi, I'm Katie. Thank you for visiting my internet home. I'm a front-end web developer at <a href="http://travelground.com">Travelground.com</a> and I do client work too at my digital agency, <a href="http://dune8.com">Dune8</a>. I get really excited about things like reducing latency and js object creation patterns. I also have experience in PHP and some Rails.</p>
             </div>
           </div>
           
@@ -58,9 +63,9 @@
       <div class="section" id="projects">
         <h2>Projects</h2>
         <p> These are bigger personal projects I've worked to play around with new technologies and build fun stuff (that is also sometimes useful!)</p>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
+        <div class="row item-container js-masonry" data-masonry-options='{ "columnWidth": 0, "itemSelector": ".item" }'>
+          <div class="col-xs-12 col-sm-6 col-md-4 item">
+            <div class="thumbnail ">
               <a href="http://captainslogapp.com/" class="thumbnail" target="_blank">
                 <img src="images/captainslog-small.png" alt="Captains' Log app">
               </a>
@@ -73,8 +78,8 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
+          <div class="col-xs-12 col-sm-6 col-md-4 item">
+            <div class="thumbnail ">
               <a href="http://www.katielouw.com/sites/Frogger/" class="thumbnail" target="_blank">
                 <img src="images/frogger-small.png" alt="Frogger game">
               </a>
@@ -82,7 +87,7 @@
                 <h3>Frogger</h3>
                 <p>A classic arcade game built with object-orientated Javascipt</p>
                 <p class="fine-print">
-                  Tools and Skills: Vanilla JS, HTML5 Canvas, Audio, CSS3/Html5 only Modals
+                  Tools and Skills: Vanilla JS, OO JS, HTML5 Canvas, Audio, CSS3/Html5 only modals
                 </p>
                 <a href="http://www.katielouw.com/sites/Frogger/" target="_blank">Play Frogger!</a>
               </div>
@@ -94,53 +99,64 @@
 
       <div class="section" id="work">
         <h2>Client Work</h2>
-        <p>I run a digital agency, <a href="dune8.com">Dune8.com</a> and provide my clients with design, web development and content strategy. This has taught me so much about managing clients, communication, projects and timelines as well as using a wide range of technologies from customised Wordpress projects to building out a full-stack Rails CMS.</p>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a href="#" class="thumbnail">
+        <p>I run a digital agency, <a href="dune8.com">Dune8.com</a> where I build websites for clients. I also design the sites and help with content strategy. This has taught me so much about managing and communicating with clients, managing projects and timelines and how to use the right tool for the job, from a custom Wordpress project to building out a full-stack Rails CMS.</p>
+        <div class="row js-masonry"
+  data-masonry-options='{ "columnWidth": 0, "itemSelector": ".item" }'>
+          <div class="col-xs-12 col-sm-6 col-md-4 item">
+            <div class="thumbnail ">
+              <a href="http://fizantakraal.co.za/" class="thumbnail">
                 <img src="images/fizanta-logo.jpg" alt="Fizantakraal Private Trout Lodge">
               </a>
               <div class="caption">
-                <h3>Title</h3>
-                <p>Description</p>
-                <a href="">Link</a>
+                <h3>Fizantkraal Lodge</h3>
+                <p>This was my first contract project for Dune8. It's a simple static site to showcase the lodge.</p>
+                <p class="fine-print">
+                  Tools and Skills: HTML and CSS, responsive web design, information heirarchy and content writing. 
+                </p>
+                <a href="http://fizantakraal.co.za/">Visit Fizantakraal.co.za</a>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a href="#" class="thumbnail">
+          <div class="col-xs-12 col-sm-6 col-md-4 item">
+            <div class="thumbnail ">
+              <a href="http://www.stevelouw.org/" class="thumbnail">
                 <img src="images/steve-logo.jpg" alt="Steve Louw">
               </a>
               <div class="caption">
-                <h3>Title</h3>
-                <p>Description</p>
-                <a href="">Link</a>
+                <h3>Steve Louw Musician Website</h3>
+                <p>This site was designed and built to showcase music and the band's image and allow users to stream and buy music and videos.</p>
+
+                <p class="fine-print">Tools and Skills: PHP backend with SQL databse using prepared statements, HTML and CSS frontend, responsive design, custom music streaming, search and autocomplete for albums, songs and lyrics, npm and grunt for asset pipeline.</p>
+                <a href="http://www.stevelouw.org/">Visit Stevelouw.org</a>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a href="#" class="thumbnail">
+          <div class="col-xs-12 col-sm-6 col-md-4 item">
+            <div class="thumbnail ">
+              <a href="http://www.youthincsa.com/" class="thumbnail">
                 <img src="images/youthinc-logo.jpg" alt="Youthinc Consultancy">
               </a>
               <div class="caption">
-                <h3>Title</h3>
-                <p>Description</p>
-                <a href="">Link</a>
+                <h3>Youthinc Consultancy</h3>
+                <p>Youthinc.sa is a custom wordpress site since the site would be changing a lot as the team and projects evolved and everything needed to be editable.</p>
+                <p class="fine-print">Tools and Skills: developing for Wordpress, responsive design, information heirarchy and content writing.
+                </p>
+                <a href="http://www.youthincsa.com/">Visit Youthincsa.com</a>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <a href="#" class="thumbnail">
+          <div class="col-xs-12 col-sm-6 col-md-4 item">
+            <div class="thumbnail ">
+              <a href="http://ormsphototours.herokuapp.com/" class="thumbnail">
                 <img src="images/orms-logo.png" alt="Orms Photographic Tours">
               </a>
               <div class="caption">
-                <h3>Title</h3>
-                <p>Description</p>
-                <a href="">Link</a>
+                <h3>Orms Photographic Tours</h3>
+                <p>My most challenging project so far, Orms was a Rails site to showcase photographic tours. This was my first project managing relationships with a larger corporate client with different stakeholders. The site is currently in pre-realease.</p>
+                <p class="fine-print">
+                  Rails backend, custom-made bootstrap responsive theme, rental gear page has javascript search, filtering and sorting, custom admin portal to edit rental gear, tours, testimonials and photos.
+                </p>
+                <a href="http://ormsphototours.herokuapp.com/">Visit Orms Photographic Tours</a>
               </div>
             </div>
           </div>
@@ -150,40 +166,45 @@
       <div class="section" id="sites">
         <h2>Sites</h2>
         <p>These are smaller fun sites I've built to hone my craft!</p>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="#" class="thumbnail">
+        <div class="js-masonry"
+  data-masonry-options='{ "columnWidth": 0, "itemSelector": ".item" }'>
+          <div class="col-xs-12 col-sm-6 col-md-4 item">
+              <div class="thumbnail ">
+                <a href="http://www.katielouw.com/sites/Sierpinski/
+" class="thumbnail">
                   <img src="images/sierpinski.png" alt="Sierpinski Triangles ">
                 </a>
                 <div class="caption">
-                  <h3>Title</h3>
-                  <p>Description</p>
-                  <a href="">Link</a>
+                  <h3>Sierpinski Triangles</h3>
+                  <p>Draws recursive triangles on HTML canvas to create the Sierpinksi fractal pattern.</p>
+                  <a href="http://www.katielouw.com/sites/Sierpinski/
+">See Sierpinksi</a>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="#" class="thumbnail">
+            <div class="col-xs-12 col-sm-6 col-md-4 item">
+              <div class="thumbnail ">
+                <a href="http://www.katielouw.com/sites/Move-Planner/" class="thumbnail">
                   <img src="images/cityexplorer.png" alt="City Explorer">
                 </a>
                 <div class="caption">
-                  <h3>Title</h3>
-                  <p>Description</p>
-                  <a href="">Link</a>
+                  <h3>City Explorer</h3>
+                  <p>Uses Ajax to query the NYTimes, Wikipedia and Google Maps APIs and show images and links related to a street address.</p>
+                  <a href="http://www.katielouw.com/sites/Move-Planner/">See City Explorer</a>
                 </div>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="#" class="thumbnail">
+            <div class="col-xs-12 col-sm-6 col-md-4 item">
+              <div class="thumbnail ">
+                <a href="http://www.katielouw.com/sites/Wedding/
+" class="thumbnail">
                   <img src="images/wedding.png" alt="Wedding Site">
                 </a>
                 <div class="caption">
-                  <h3>Title</h3>
-                  <p>Description</p>
-                  <a href="">Link</a>
+                  <h3>Website for my Wedding!</h3>
+                  <p>Simple but pretty informational site.</p>
+                  <a href="http://www.katielouw.com/sites/Wedding/
+">See Wedding Site</a>
                 </div>
               </div>
             </div>
@@ -191,18 +212,18 @@
       </div>
 
 
-      <div class="section" id="about">
+      <div class="section" id="more-about">
         <h2>A Bit More About Me</h2>
-          <div class="row">
-            <div class="col-xs-12">
-              <p>
-                My first degree is in Philosophy, because I am really curious and I wanted to know the meaning of Life, the Universe and Everything (with dubious aid of boolean logic). I did my MSc in Managerial Economics at the London School of Economics, but broke free from the suit life and taught myself to code because being able to create things out of thoughts is so satisfying (the boolean logic finally helped). It's a great way to combine creativity with logic. My ambition is to be a master builder of the digital world. </p>
-                <p>My motto is "work hard and be nice to people". When I'm offline, I like to be miles from anywhere with everything I need in my backpack (sometimes for days). A good flat white, skiing powder and Christmas rock my world. But most of all, I love to learn.</p>
-            </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              My first degree is in Philosophy and Economics, because I am really curious and I wanted to know the meaning of Life, the Universe and Everything. I did my MSc in Managerial Economics at the London School of Economics, but quickly realised I don't enjoy a structured, corporate environment so I taught myself to code.  I also like languages and am teaching myself German. </p> 
+              <p>What I love about coding is being able to build things I think about, and how the industry is so fast-paced that I'm always learning new things. My ambition is to be the best developer I can be.  </p>
+              <p>My motto is "work hard and be nice to people". A good flat white, skiing powder and Christmas rock my world. But most of all, I love to learn.</p>
+              <p>You can find me on <a href="https://twitter.com/katie_womers">twitter</a> or <a href="">email me.</a></p>  
           </div>
-
-
-    </div>
+        </div>
+      </div>
 
     <footer class="footer">
       <div class="container">
@@ -216,6 +237,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script async src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
 
   </body>
 </html>

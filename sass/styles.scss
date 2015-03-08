@@ -1,4 +1,6 @@
 /* Bootstrap includes */
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
 // Core variables and mixins
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
@@ -23,9 +25,14 @@
 
 // Components
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/close";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
 @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
 
 
 /* Font Awesome */
