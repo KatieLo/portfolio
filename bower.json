@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "0.0.0",
+  "homepage": "https://github.com/KatieLo/portfolio",
+  "authors": [
+    "Katie Louw <katielouw@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.3",
+    "fontawesome": "~4.3.0",
+    "masonry": "~3.2.2"
+  }
+}
