@@ -11674,11 +11674,11 @@ body {
   background-color: #fffefe; }
   body .page-header {
     margin-top: 70px 0px;
-    padding: 50px 0 50px 0;
+    padding: 40px 0 40px 0;
     text-align: center; }
     @media (min-width: 992px) {
       body .page-header {
-        padding: 200px; } }
+        padding: 80px; } }
     body .page-header h1 {
       font-family: "Abril Fatface", serif;
       font-size: 50px; }
